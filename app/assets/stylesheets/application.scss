@@ -187,23 +187,28 @@
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: white;
 }
 .new_container{
   margin: 80px 30%;
   & .new_two_container {
     margin: 0 auto;
-    border: 1px solid grey;
+    // border: 1px solid grey;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     padding: 10px;
+    // background-color: rgb(76, 169, 223);
+    background: linear-gradient(rgba(28, 140, 192, 0.897),rgba(134, 165, 185, 0.918));
 
   }
 }
 
 .form_container {
   margin: 20px;
+  color: white;
 }
 
 .form {
   margin: 0 auto;
   width: 100%;
+  color: white;
 }
