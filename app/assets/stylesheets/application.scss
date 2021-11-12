@@ -115,37 +115,53 @@
 
 .movie_cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-  margin: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  margin: 20px 60px;
   justify-items: center;
 }
 
 .movie_card {
-  width: 80%;
+  width: 70%;
+  height: 350px;
   justify-content: space-around;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .movie_poster {
     // padding: 250px;
     background-size: cover;
-    height: 50%;
+    height: 40%;
     width: 100%;
     background-position: center;
 }
 
 .movie_content {
+  // overflow: scroll;
+  height: 60%;
   text-align: left;
   background: white;
   padding: 20px;
-  & .movie_overview, .bookmark_container {
+  & .movie_overview {
+    font-size: 12px;
+    margin-top: 5px;
+    overflow: scroll;
+    height: 60%;
+  }
+  & .bookmark_container {
     font-size: 12px;
   }
 }
-.title_container, .bookmark_container {
+.title_container {
   display: flex;
   align-items: center;
   justify-items: center;
+}
+
+.bookmark_container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .add {
@@ -161,4 +177,18 @@
     color: white;
     text-align: center;
   }
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.form_container {
+  margin: 20px 100px;
+}
+
+.form {
+  margin: 0 auto;
 }

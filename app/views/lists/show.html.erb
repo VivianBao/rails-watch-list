@@ -9,7 +9,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <%= link_to 'Home', lists_path %>
+        <%= link_to 'Home', root_path %>
       </li>
     </ul>
   </div>
@@ -33,8 +33,10 @@
               </div>
               <p class='movie_overview'><%= bookmark.movie.overview %></p>
               <div class="bookmark_container">
-                <p><%= bookmark.comment %></p>
-                <%= link_to 'Delete', list_bookmark_path(list_id: bookmark.list_id, bookmark_id: bookmark.id), method: :delete %>
+                <p class="bookmark_item"><i class="far fa-bookmark"></i> <%= bookmark.comment %></p>
+                <%= link_to list_bookmark_path(list_id: bookmark.list_id, bookmark_id: bookmark.id), method: :delete, class: "bookmark_item text-secondary" do %>
+                  <i class="far fa-trash-alt"></i>
+                <% end %>
               </div>
           </div>
       </div>
