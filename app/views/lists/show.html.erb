@@ -28,8 +28,8 @@
           <div class="movie_poster" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://image.tmdb.org/t/p/w1000<%= bookmark.movie.poster_url %>)"></div>
           <div class= 'movie_content'>
               <div class='title_container'>
-                <%= bookmark.movie.title %>
-                <%= bookmark.movie.rating %>
+                <p><%= bookmark.movie.title %></p>
+                <p><i class="fas fa-star"></i><%= bookmark.movie.rating %></p>
               </div>
               <p class='movie_overview'><%= bookmark.movie.overview %></p>
               <div class="bookmark_container">

@@ -156,6 +156,9 @@
   display: flex;
   align-items: center;
   justify-items: center;
+  & p {
+    margin-right: 5px;
+  }
 }
 
 .bookmark_container {
@@ -183,12 +186,24 @@
   text-align: center;
   font-weight: bold;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+.new_container{
+  margin: 80px 30%;
+  & .new_two_container {
+    margin: 0 auto;
+    border: 1px solid grey;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    padding: 10px;
+
+  }
 }
 
 .form_container {
-  margin: 20px 100px;
+  margin: 20px;
 }
 
 .form {
   margin: 0 auto;
+  width: 100%;
 }
